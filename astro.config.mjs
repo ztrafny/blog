@@ -9,7 +9,7 @@ export default defineConfig({
       title: 'Zac Trafny',
       description: 'Writing on software, knowledge, and building things.',
       social: [
-        { icon: 'linkedin', label: 'LinkedIn', href: 'https://linkedin.com/in/zactrafny' },
+        { icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/zac-trafny-7681b568/' },
         { icon: 'github', label: 'GitHub', href: 'https://github.com/zactrafny' },
       ],
       sidebar: [
