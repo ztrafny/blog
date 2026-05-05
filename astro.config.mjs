@@ -8,10 +8,10 @@ export default defineConfig({
     starlight({
       title: 'Zac Trafny',
       description: 'Writing on software, knowledge, and building things.',
-      social: {
-        linkedin: 'https://linkedin.com/in/zactrafny',
-        github: 'https://github.com/zactrafny',
-      },
+      social: [
+        { icon: 'linkedin', label: 'LinkedIn', href: 'https://linkedin.com/in/zactrafny' },
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/zactrafny' },
+      ],
       sidebar: [
         {
           label: 'Blog',
