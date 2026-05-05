@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
+  site: 'https://ztrafny.github.io',
   integrations: [
     starlight({
       title: 'Zac Trafny',
