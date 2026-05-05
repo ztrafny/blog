@@ -31,6 +31,20 @@ and into this repo's `src/content/docs/`.
 5. If it's a new series, add a `sidebar` block in `astro.config.mjs` referencing the directory
 6. Commit + push to `main`; the workflow deploys
 
+## Voice review (slash command)
+
+Before promoting a draft from `writing/notes/drafts/` into this repo,
+run it through the `/voice-review` skill (defined at
+`~/.claude/commands/voice-review.md`). The skill:
+
+- Reads `voice-model/voice-profile.md` and the target draft
+- Does a first-pass audit against the profile (anti-AI checklist, tone match, spots that feel off)
+- Walks the document section-by-section, editing in place after each approval
+- Proposes updates to `voice-profile.md` if the review surfaces voice patterns not yet captured
+
+The skill uses paths relative to cwd, so invoke it from the writing repo:
+`cd /Users/ztrafny/workspace/writing && /voice-review notes/drafts/<file>.md`.
+
 ## Local commands
 
 - `npm install` — install deps (Node ≥22.12 required by Astro 6)
