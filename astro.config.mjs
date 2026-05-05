@@ -3,6 +3,7 @@ import starlight from '@astrojs/starlight';
 
 export default defineConfig({
   site: 'https://ztrafny.github.io',
+  base: '/blog',
   integrations: [
     starlight({
       title: 'Zac Trafny',
@@ -17,7 +18,7 @@ export default defineConfig({
           items: [
             {
               label: 'Lessons from Building Solo Software',
-              autogenerate: { directory: 'blog/lessons-from-building-solo-software' },
+              autogenerate: { directory: 'lessons-from-building-solo-software' },
             },
           ],
         },
