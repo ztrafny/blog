@@ -17,7 +17,7 @@ That threshold is collapsing.
 
 A single person with technical fluency and a deep understanding of the problem space can now build tools that would have required a team of five or ten just a few years ago. The cost of going from idea to working software has dropped by an order of magnitude, and that changes the math on what's worth building. Markets that were too small before suddenly aren't. Problems that couldn't justify a development team can now justify one person who knows how to build, paired with someone who knows the problem cold.
 
-The tool I built, Loan Decoder, serves a company called Student Loan Tutor LLC. Their team uses it daily to make sense of federal student loan policy. It's not a side project or a prototype. It's infrastructure. And one person built it.
+The tool I built, Loan Decoder, serves a company called Student Loan Tutor LLC. Their team uses it daily to make sense of federal student loan policy. The whole business runs on it, and one person built it.
 
 What excites me about this isn't my own story. It's what it implies for everyone else. People from non-traditional backgrounds are going to build things they couldn't build before, and not just clones of what already exists. Domain experts are going to look at the inefficiencies in their own fields and realize they could actually solve them now. The barrier to entry hasn't disappeared, but it has moved. And when you lower the cost of creation, you don't just get cheaper versions of what's already here. You get whole categories of things that didn't exist before.
 
