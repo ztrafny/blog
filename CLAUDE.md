@@ -34,8 +34,9 @@ and into this repo's `src/content/docs/`.
 ## Voice review (slash command)
 
 Before promoting a draft from `writing/notes/drafts/` into this repo,
-run it through the `/voice-review` skill (defined at
-`~/.claude/commands/voice-review.md`). The skill:
+run it through the `/voice-review` skill. It's a project-scoped command
+defined in the writing repo at `.claude/commands/voice-review.md`, so
+it's only available when cwd is inside the writing repo. The skill:
 
 - Reads `voice-model/voice-profile.md` and the target draft
 - Does a first-pass audit against the profile (anti-AI checklist, tone match, spots that feel off)
