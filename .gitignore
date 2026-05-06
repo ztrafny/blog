@@ -17,3 +17,8 @@ node_modules/
 
 # astro
 .astro/
+
+# symlinks to in-progress drafts in the writing repo (local preview only).
+# add one line per symlinked draft; remove when promoting to a real file.
+src/content/docs/lessons-from-building-solo-software/04-the-platform.md
+
