@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap');
+
+:root {
+  --sl-color-bg: #fafaf8;
+  --sl-color-bg-nav: #fafaf8;
+  --sl-color-bg-sidebar: #fafaf8;
+  --sl-color-text: #252525;
+  --sl-color-text-accent: #2a7a57;
+  --sl-color-bg-accent: #e8f0e8;
+  --sl-color-text-muted: #6b6b66;
+  --sl-color-bg-code: #f5f4f0;
+  --sl-color-bg-inline-code: #f5f4f0;
+  --sl-color-hairline: #e8e6df;
+  --sl-color-hairline-light: #efeee9;
+  --sl-color-hairline-shade: #e8e6df;
+
+  --sl-font: 'Geist', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --sl-font-mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+[data-theme='dark'] {
+  --sl-color-bg: #1a2620;
+  --sl-color-bg-nav: #1a2620;
+  --sl-color-bg-sidebar: #1a2620;
+  --sl-color-text: #f5f4f0;
+  --sl-color-text-accent: #8dcfae;
+  --sl-color-bg-accent: #22332a;
+  --sl-color-text-muted: #a8b0a8;
+  --sl-color-bg-code: #22332a;
+  --sl-color-bg-inline-code: #22332a;
+  --sl-color-hairline: #2a3a32;
+  --sl-color-hairline-light: #243029;
+  --sl-color-hairline-shade: #2a3a32;
+}
+
+h1#_top,
+.hero h1 {
+  font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  font-optical-sizing: auto;
+  font-variation-settings: 'SOFT' 50;
+  letter-spacing: -0.015em;
+  line-height: 1.1;
+}
+
+.forest-band {
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #8dcfae, #5ab389);
+  pointer-events: none;
+  z-index: 1;
+}
+
+[data-theme='dark'] .forest-band {
+  background: linear-gradient(135deg, #236247, #2a7a57);
+}
