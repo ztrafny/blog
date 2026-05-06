@@ -31,6 +31,41 @@ and into this repo's `src/content/docs/`.
 5. If it's a new series, add a `sidebar` block in `astro.config.mjs` referencing the directory
 6. Commit + push to `main`; the workflow deploys
 
+## Previewing drafts in the dev server
+
+Drafts that still live in the writing repo can be previewed in the blog's
+local dev server via a gitignored symlink. This lets you iterate on a draft
+in the writing repo while seeing it rendered in context with the rest of
+the site (sidebar, theme, navigation), without having to move the file
+prematurely.
+
+To set up a draft for preview:
+
+1. Create a symlink at the canonical publish path, pointing at the draft in
+   the writing repo:
+   ```
+   ln -s /Users/ztrafny/workspace/writing/notes/drafts/<draft-file>.md \
+     src/content/docs/<series-slug>/<NN>-<post-slug>.md
+   ```
+2. Add the symlink path to `.gitignore` under the "symlinks to in-progress
+   drafts" block.
+3. Run `npm run dev` — the post renders at
+   `http://localhost:4321/blog/<series-slug>/<NN>-<post-slug>/` with hot
+   reload on every save in either repo.
+
+The draft must already have valid Starlight frontmatter (`title`,
+`description`, `sidebar.label`, `sidebar.order`, and `draft: true`) for
+the symlink to render.
+
+When promoting to publish:
+
+1. Delete the symlink.
+2. Move (or copy) the real markdown file from the writing repo to the
+   same path in `src/content/docs/`.
+3. Flip `draft: true` → `draft: false` (or remove the field).
+4. Remove the gitignore line for that path.
+5. Commit + push.
+
 ## Voice review (slash command)
 
 Before promoting a draft from `writing/notes/drafts/` into this repo,
