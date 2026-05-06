@@ -11,6 +11,7 @@ export default defineConfig({
       customCss: ['./src/styles/theme.css'],
       components: {
         Header: './src/components/Header.astro',
+        Footer: './src/components/Footer.astro',
       },
       social: [
         { icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/zac-trafny-7681b568/' },

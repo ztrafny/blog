@@ -2,6 +2,8 @@
 title: "What I Almost Built"
 description: "How domain familiarity almost led me to build the wrong thing, and what listening to the customer fixed."
 draft: true
+date: 2026-05-04
+tags: ["solo building", "product", "customer discovery"]
 sidebar:
   label: "3. What I Almost Built"
   order: 3

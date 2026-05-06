@@ -2,6 +2,8 @@
 title: "Code Was the Easy Part"
 description: "Code is getting cheaper to write. Domain knowledge isn't getting cheaper to acquire. The partnership between builder and expert is the part of the 'AI makes building easier' story that gets skipped."
 draft: true
+date: 2026-05-04
+tags: ["solo building", "domain knowledge", "AI"]
 sidebar:
   label: "2. Code Was the Easy Part"
   order: 2

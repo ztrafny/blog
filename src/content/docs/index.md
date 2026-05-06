@@ -6,6 +6,6 @@ hero:
   tagline: Thoughts on building niche software, knowledge engineering, and the economics of creation.
   actions:
     - text: Read the blog
-      link: /lessons-from-building-solo-software/01-the-opportunity/
+      link: /blog/lessons-from-building-solo-software/01-the-opportunity/
       icon: right-arrow
 ---

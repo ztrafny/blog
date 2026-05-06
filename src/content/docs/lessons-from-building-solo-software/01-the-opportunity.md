@@ -2,6 +2,8 @@
 title: "The Opportunity: One Person Can Now Build Real Software"
 description: "The cost of building software has dropped so dramatically that niche problems, previously too small to justify investment, now make economic sense to solve."
 draft: true
+date: 2026-05-04
+tags: ["solo building", "economics of software"]
 sidebar:
   label: "1. The Opportunity"
   order: 1
